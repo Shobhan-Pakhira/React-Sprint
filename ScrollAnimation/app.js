@@ -12,3 +12,10 @@ tl.fromTo('.front-page', {clipPath:'circle(5%)'},{clipPath:'circle(75%)', durati
 tl.fromTo('.music-note', {scale: 0.5}, {scale:0 ,opacity:0, duration:1}, "-=3");
 tl.fromTo('.title',{opacity:0}, {opacity:1, duration:1});
 tl.fromTo('.sub-title',{opacity:0}, {opacity:1, duration:1});
+
+//Change Picture JS
+
+function changeImage(fileName){
+ let img = document.querySelector("#ampleimage");
+ img.setAttribute('src', fileName);
+}

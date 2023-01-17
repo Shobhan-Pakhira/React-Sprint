@@ -45,4 +45,51 @@
 
 .second-page{
     height: 100vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 80px;
+        background: rgb(235, 235, 235);
+        /* transition: all 300ms;        */
+}
+
+.card-wrapper{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .cards:hover {
+    transform: scaleY(2);
+    background: #f1f1f1;
+   } */
+
+.cards:active {
+    transform: scaleY(2);
+    background: #ff8181;
+    opacity: 50%;
+    margin: 8%;
+   }
+
+.images{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sample-images{
+    height: 400px;
+    width: 400px;
+    position: absolute;
 }

@@ -1,14 +1,18 @@
 import './App.css';
 import React from 'react';
 import Hero from './components/Hero';
-import Secondpage from './components/Secondpage';
+import SecondPage from './components/Secondpage';
+import ProductDisplay from './components/ProductDisplay';
+import ShowHide from './components/ShowHide';
 
 
 function App() {
   return (
     <>
       <Hero/>
-      <Secondpage/>
+      <SecondPage/>
+      <ProductDisplay/>
+      <ShowHide />
     </>
   );
 }
