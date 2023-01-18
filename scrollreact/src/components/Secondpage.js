@@ -6,12 +6,16 @@ import police from '../assets/police.svg'
 import {animated, useSpring} from "react-spring"
 
  const SecondPage = () => {
-  const professions = ["police", "chef", "doctor", "engineer"];
+  const professions = [
+    {title:'police',image: police, description:'bla-la'},
+    {title:'police',image: police, description:'bla-la'},
+    {title:'police',image: police, description:'bla-la'},
+    {title:'police',image: police, description:'bla-la'}
+  ];
   const [myProfession, setMyProfession] = useState("chef");
 
   const currentStyle = {style:{width: '550px',height: '80px', background: 'rgb(116, 116, 116)'}}
   const newCSS = [{style: { transform: 'scaleY(1.5)', background: '#f1f1f1', opacity: '0.5', margin: '4%'}}]
-  const [currentCSS, setNewCSS] = useState(currentStyle);
   
   return (
     <div className="second-page">
@@ -21,12 +25,12 @@ import {animated, useSpring} from "react-spring"
 
         <div className="card-wrapper" role="group" aria-label="Basic Example">
         {professions.map(profession =>(
-          <div key={profession} className="card" onClick={()=> {setMyProfession(profession); setNewCSS(newCSS);}}>
+          <div key={profession} className="card" onClick={()=> setMyProfession}>
                 {profession.toLocaleUpperCase()}
                 </div>
         ))} 
         </div>
-        
+
         <div className="images">
           <p>
             {myProfession === "police" && (
