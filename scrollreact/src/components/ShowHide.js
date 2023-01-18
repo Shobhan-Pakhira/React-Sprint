@@ -13,10 +13,7 @@ const ShowHide = () => {
                 <div className="col mb-3 col-12 text-center">
                     <h2>Select the profession you like the most</h2>
                     <br />
-                    <div
-                        className="btn-group"
-                        role="group"
-                        aria-label="Basic example">
+                    <div className="btn-group" role="group" aria-label="Basic example">
                         {professions.map(profession => (
                             <button
                                 type="button"

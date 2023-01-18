@@ -50,12 +50,12 @@
   flex-direction: row;
 }
 
-.cards{
+.card{
       display: flex;
       flex-direction: column;
       width: 550px;
       height: 80px;
-      background: rgb(235, 235, 235);
+      background: rgb(116, 116, 116);
       /* transition: all 300ms;        */
 }
 
@@ -68,10 +68,12 @@
   justify-content: center;
 }
 
-/* .cards:hover {
-  transform: scaleY(2);
+.card:hover {
+  transform: scaleY(1.5);
   background: #f1f1f1;
- } */
+  opacity: 50%;
+  margin: 4%;
+ }
 
 /* .cards:active {
   transform: scaleY(2);
@@ -92,4 +94,8 @@
   height: 400px;
   width: 400px;
   position: absolute;
+}
+
+.landing-page{
+  height: 100vh;
 }
