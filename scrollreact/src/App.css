@@ -50,6 +50,11 @@
   flex-direction: row;
 }
 
+.heading-text{
+  display: flex;
+  flex-direction: row;
+}
+
 .card{
       display: flex;
       flex-direction: column;
@@ -68,12 +73,12 @@
   justify-content: center;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scaleY(1.5);
   background: #f1f1f1;
   opacity: 50%;
   margin: 4%;
- }
+ } */
 
 /* .cards:active {
   transform: scaleY(2);

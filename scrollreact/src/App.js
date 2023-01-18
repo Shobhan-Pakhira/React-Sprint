@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import SecondPage from './components/Secondpage';
 import ProductDisplay from './components/ProductDisplay';
 import ShowHide from './components/ShowHide';
+import LandingPage from './components/LandingPage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <SecondPage/>
       <ProductDisplay/>
       <ShowHide />
+      <LandingPage />
     </>
   );
 }

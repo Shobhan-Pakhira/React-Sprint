@@ -9,11 +9,19 @@ import {animated, useSpring} from "react-spring"
   const professions = ["police", "chef", "doctor", "engineer"];
   const [myProfession, setMyProfession] = useState("chef");
 
+  const currentStyle = {style:{width: '550px',height: '80px', background: 'rgb(116, 116, 116)'}}
+  const newCSS = [{style: { transform: 'scaleY(1.5)', background: '#f1f1f1', opacity: '0.5', margin: '4%'}}]
+  const [currentCSS, setNewCSS] = useState(currentStyle);
+  
   return (
     <div className="second-page">
+      {/* <div className="heading-text">
+        <h1>Powerful, flexible, scalable digital experiences for your business</h1>
+      </div> */}
+
         <div className="card-wrapper" role="group" aria-label="Basic Example">
         {professions.map(profession =>(
-          <div key={profession} className="card" onClick={()=> setMyProfession(profession)}>
+          <div key={profession} className="card" onClick={()=> {setMyProfession(profession); setNewCSS(newCSS);}}>
                 {profession.toLocaleUpperCase()}
                 </div>
         ))} 
@@ -49,9 +57,6 @@ import {animated, useSpring} from "react-spring"
         />
     );
 };
-
-
-{/* <h3 className="header-text">Product Discovery</h3> */}
 
 export default SecondPage
 
