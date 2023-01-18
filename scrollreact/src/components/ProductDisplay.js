@@ -3,6 +3,7 @@ import doctor from '../assets/doctor.svg'
 import engineer from '../assets/engineer.svg'
 import chef from '../assets/chef.svg'
 import police from '../assets/police.svg'
+import {animated, useSpring} from "react-spring"
 
 const Professions = [
     {title: 'police', image: police, description:'bla-la', icon:'icon'},
@@ -25,15 +26,24 @@ const ProductDisplay = () => {
                         <button 
                             type="button"
                             key="{professions]"
-                            className={"btn btn-light border-dark"}
+                            className={`btn btn-light border-dark ${profession.title === currentProfession?'shadow':''}`}
                             onClick={() => setCurrentProfession(profession.title)}>
                         </button>
-
                     ))}
                 </div>
         </div>
     </div>
-  )
-}
+  )}
+
+  const ProfessionImage = ({ src }) => {
+    const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+    return (
+        <animated.img
+            src={src}
+            alt=""
+            style={{ width: "400px", height: "400px", ...props }}
+        />
+    );
+};
 
 export default ProductDisplay

@@ -26,7 +26,7 @@ import {animated, useSpring} from "react-spring"
                 </div>
         ))} 
         </div>
-
+        
         <div className="images">
           <p>
             {myProfession === "police" && (
