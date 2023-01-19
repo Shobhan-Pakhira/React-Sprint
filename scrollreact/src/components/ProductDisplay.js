@@ -22,10 +22,10 @@ const ProductDisplay = () => {
                 className="btn-group"
                 role="group"
                 aria-label="Basic Example">
-                    {Professions.map(profession =>(
+                    {Professions.map((profession,idx)=>(
                         <button 
                             type="button"
-                            key="{professions]"
+                            key={idx}
                             className={`btn btn-light border-dark ${profession.title === currentProfession?'shadow':''}`}
                             onClick={() => setCurrentProfession(profession.title)}>
                         </button>

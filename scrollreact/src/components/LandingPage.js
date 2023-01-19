@@ -7,7 +7,6 @@ const LandingPage = () => {
   return (
     <>
     <div className='landing-page' style={{backgroundImage:`url(${background})`, backgroundSize:`cover`,backgroundRepeat:`no-repeat`}}>
-      {/* <img src={background} alt='background' height={100} width={100}/> */}
       <div className='hero-content'>
         <h1 className='hero-text'>Become Fluent in <br /> Any Language With <br /> Anya Wareeson</h1>
         <p className='aux-text'>Choose from over 10000 teachers and excel your favourite language.</p>
@@ -40,14 +39,14 @@ const LandingPage = () => {
         </div>
       </div> */}
 
-      <div class="teacher-card">
-        <div class="teacher-pic"></div>
+      <div className="teacher-card">
+        <div className="teacher-pic"></div>
       </div>
-      <div class="teacher-card">
-        <div class="teacher-pic"></div>
+      <div className="teacher-card">
+        <div className="teacher-pic"></div>
       </div>
-      <div class="teacher-card">
-        <div class="teacher-pic"></div>
+      <div className="teacher-card">
+        <div className="teacher-pic"></div>
       </div>
 
     </div>

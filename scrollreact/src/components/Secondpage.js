@@ -8,14 +8,14 @@ import {animated, useSpring} from "react-spring"
  const SecondPage = () => {
   const professions = [
     {title:'police',image: police, description:'bla-la'},
-    {title:'police',image: police, description:'bla-la'},
-    {title:'police',image: police, description:'bla-la'},
-    {title:'police',image: police, description:'bla-la'}
+    {title:'chef',image: chef, description:'bla-la'},
+    {title:'doctor',image: doctor, description:'bla-la'},
+    {title:'engineer',image: engineer, description:'bla-la'}
   ];
   const [myProfession, setMyProfession] = useState("chef");
 
-  const currentStyle = {style:{width: '550px',height: '80px', background: 'rgb(116, 116, 116)'}}
-  const newCSS = [{style: { transform: 'scaleY(1.5)', background: '#f1f1f1', opacity: '0.5', margin: '4%'}}]
+  const currentStyle = {width: '550px',height: '80px', background: 'rgb(116, 116, 116)'}
+  const newCSS =  { transform: 'scaleY(1.5)', background: '#f1f1f1', opacity: '0.5', margin: '4%'}
   
   return (
     <div className="second-page">
@@ -24,9 +24,12 @@ import {animated, useSpring} from "react-spring"
       </div> */}
 
         <div className="card-wrapper" role="group" aria-label="Basic Example">
-        {professions.map(profession =>(
-          <div key={profession} className="card" onClick={()=> setMyProfession}>
-                {profession.toLocaleUpperCase()}
+        {professions.map((profession,idx) =>(
+          <div key={idx} className="card" onClick={()=> setMyProfession(profession.title)} style={
+            myProfession === profession.title ? {...newCSS} : {...currentStyle}
+          }>
+                {profession.title.toUpperCase()}
+                {profession.description}
                 </div>
         ))} 
         </div>

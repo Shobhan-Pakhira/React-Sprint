@@ -5,6 +5,7 @@ import SecondPage from './components/Secondpage';
 import ProductDisplay from './components/ProductDisplay';
 import ShowHide from './components/ShowHide';
 import LandingPage from './components/LandingPage';
+import CardPage from './components/CardPage';
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <>
       <Hero/>
       <SecondPage/>
-      <ProductDisplay/>
-      <ShowHide />
+      {/* <ProductDisplay/> */}
+      {/* <ShowHide /> */}
       <LandingPage />
+      <CardPage />
     </>
   );
 }

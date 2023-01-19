@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div class="front-page" style={{clipPath: `circle(${clipPath}%)`}}>
+    <div className="front-page" style={{clipPath: `circle(${clipPath}%)`}}>
         <div className="intro-text" style={{display: clipPath<50?"none" : "block"}}>
           <h1 className="title">Learn to play Guitar.</h1>
           <h2 className="sub-title">
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <img className="music-note" style={{display: clipPath>=50?"none" : "block"}} src={Background} alt=""></img>
         <div className="blend"></div>
-        <video src={video} autoplay="true" loop="true"></video>
+        <video src={video} autoPlay={true} loop={true}></video>
       </div>
   )
 }
