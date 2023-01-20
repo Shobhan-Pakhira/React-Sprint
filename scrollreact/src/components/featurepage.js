@@ -11,7 +11,9 @@ const FeaturePage = () => {
         <div className='hero-div'>
             <div className='side-wrapper'>
                 <h1 className='hero-content'>Gain Skills When & Where You Want For Your Study or Career...</h1>
-                <button className='hero-button'>Explore Gigs</button>
+                <button className='hero-button'>
+                  <span>Explore Gigs</span>
+                </button>
             </div>
             <img className='illustration-svg' src={illustration} alt='illustration'/>
         </div>

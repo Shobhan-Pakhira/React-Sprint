@@ -612,6 +612,31 @@
   text-align: center;
 }
 
+.hero-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ .hero-button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ .hero-button:hover span {
+  padding-right: 15px;
+ }
+ 
+ .hero-button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+
  .sub-card{
   display: flex;
   flex-direction: row;
@@ -663,4 +688,4 @@ h5{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #868b9a;
-}
+} 
