@@ -1,5 +1,9 @@
 import React from 'react'
 import illustration from '../assets/illustrationMan.svg'
+import cloud from '../assets/cloud-protection.svg'
+import security from '../assets/security.svg'
+import search from '../assets/searching.svg'
+import malware from '../assets/malware.svg'
 
 const FeaturePage = () => {
   return (
@@ -12,10 +16,26 @@ const FeaturePage = () => {
             <img className='illustration-svg' src={illustration} alt='illustration'/>
         </div>
         <div className='sub-card'>
-            <div className='subcard'>1</div>
-            <div className='subcard'>1</div>
-            <div className='subcard'>1</div>
-            <div className='subcard'>1</div>
+            <div className='subcard'>
+              <img className='cloud-svg' src={cloud} alt='' />
+              <h2>Improving Opportunity</h2>
+              <h5>makes it possible</h5>
+            </div>
+            <div className='subcard'>
+              <img className='security-svg' src={security} alt='' />
+              <h2>Increasing Employability</h2>
+              <h5>gain practical skills</h5>
+            </div>
+            <div className='subcard'>
+              <img className='search-svg' src={search} alt='' />
+              <h2>Transforming Education</h2>
+              <h5>fostering the development</h5>
+            </div>
+            <div className='subcard'>
+              <img className='malware-svg' src={malware} alt='' />
+              <h2>Investing in Innovation</h2>
+              <h5>support creative ideas</h5>
+            </div>
         </div>
     </div>
   )
