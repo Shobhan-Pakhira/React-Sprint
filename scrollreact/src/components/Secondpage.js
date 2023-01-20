@@ -30,6 +30,10 @@ import {animated, useSpring} from "react-spring"
           }>
                 {profession.title.toUpperCase()}
                 {profession.description}
+                {myProfession === profession.title &&
+                <div>
+                      hello
+                </div>}
                 </div>
         ))} 
         </div>

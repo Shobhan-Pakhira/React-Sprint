@@ -1,7 +1,7 @@
 import React from 'react'
 import arrow from '../assets/arrow-down.svg'
 import hand from '../assets/hand.svg'
-import background from '../assets/Background.jpg'
+import background from '..'
 
 const LandingPage = () => {
   return (
@@ -28,25 +28,6 @@ const LandingPage = () => {
           <img className='hand-icon' src={hand} alt='hand' />
         </div>
         <p className='aux-text-footer'>10000+ teachers <br/> for any language you love</p>
-      </div>
-      {/* <div className='teacher-cards'>
-        <div class="imgbox">
-          <div class="img"></div>
-        </div>
-        <div class="details">
-          <h2 class="title">John Doe</h2>
-          <span class="caption">Developer</span>
-        </div>
-      </div> */}
-
-      <div className="teacher-card">
-        <div className="teacher-pic"></div>
-      </div>
-      <div className="teacher-card">
-        <div className="teacher-pic"></div>
-      </div>
-      <div className="teacher-card">
-        <div className="teacher-pic"></div>
       </div>
 
     </div>
