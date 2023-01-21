@@ -16,7 +16,7 @@ const LandingPage = () => {
           <button className="btn"> Get Started</button>
           <button className='btn'>Learn More</button>
         </div>
-        <button>
+        <button className='scroll-btn'>
           <p>Scroll to Bottom</p>
           <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6  w-6" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
             <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path></svg>
