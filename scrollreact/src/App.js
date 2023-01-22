@@ -7,6 +7,7 @@ import ShowHide from './components/ShowHide';
 import LandingPage from './components/LandingPage';
 import CardPage from './components/CardPage';
 import FeaturePage from './components/FeaturePage';
+import CardClick from './components/CardClick';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <LandingPage />
       <CardPage />
       <FeaturePage />
+      <CardClick />
     </>
   );
 }

@@ -4,18 +4,17 @@ import engineer from '../assets/engineer.svg'
 import chef from '../assets/chef.svg'
 import police from '../assets/police.svg'
 import {animated, useSpring} from "react-spring"
+import cart from '../assets/SecondPage/cart.svg'
+import arrow from '../assets/CardClick/arrow.svg'
 
  const SecondPage = () => {
   const professions = [
-    {title:'police',image: police, description:'bla-la'},
-    {title:'chef',image: chef, description:'bla-la'},
-    {title:'doctor',image: doctor, description:'bla-la'},
-    {title:'engineer',image: engineer, description:'bla-la'}
+    {title:'police',image: police,description:'Connect buyers with merchants tailored to them',icon:cart},
+    {title:'chef',image: chef,description:'Connect buyers with merchants tailored to them',icon:cart},
+    {title:'doctor',image: doctor,description:'Connect buyers with merchants tailored to them',icon:cart},
+    {title:'engineer',image: engineer,description:'Connect buyers with merchants tailored to them',icon:arrow}
   ];
   const [myProfession, setMyProfession] = useState("chef");
-
-  const currentStyle = {width: '550px',height: '80px', background: 'rgb(116, 116, 116)'}
-  const newCSS =  { transform: 'scaleY(1.5)', background: '#f1f1f1', opacity: '0.5', margin: '4%'}
   
   return (
     <div className="second-page">
@@ -23,17 +22,28 @@ import {animated, useSpring} from "react-spring"
         <h1>Powerful, flexible, scalable digital experiences for your business</h1>
       </div> */}
 
-        <div className="card-wrapper" role="group" aria-label="Basic Example">
+        <div role="group" aria-label="Basic Example">
         {professions.map((profession,idx) =>(
-          <div key={idx} className="card" onClick={()=> setMyProfession(profession.title)} style={
-            myProfession === profession.title ? {...newCSS} : {...currentStyle}
-          }>
-                {profession.title.toUpperCase()}
-                {profession.description}
-                {myProfession === profession.title &&
-                <div>
-                      hello
-                </div>}
+          <div key={idx} onClick={()=> setMyProfession(profession.title)}>
+                  <div class="card-btn-selected">
+                    <div className='card-btn-icon' style={myProfession === profession.title ? {
+                      backgroundColor:'red'
+                    }: {}}>
+                        <img className='cart' src={profession.icon} alt='cart-icn'/>
+                    </div>
+                    <div className='card-btn-content'>
+                        <h1 className='lead-content'>{profession.title.toUpperCase()}</h1>
+                        {myProfession === profession.title &&
+                        <>
+                          <p className='support-content'>{profession.description}</p>
+                          <div className='btn-div'>
+                          <button className='link-btn'>B2C Solutions</button>
+                          <img src={arrow} className='arrow' alt='arrow'/>
+                          </div>
+                          </>
+                        }
+                    </div>
+                </div>
                 </div>
         ))} 
         </div>
@@ -54,7 +64,6 @@ import {animated, useSpring} from "react-spring"
             )}
           </p>
         </div>
-
     </div>
   )}
 
@@ -64,10 +73,8 @@ import {animated, useSpring} from "react-spring"
         <animated.img
             src={src}
             alt=""
-            style={{ width: "400px", height: "400px", ...props }}
-        />
-    );
-};
+            style={{ width: "400px", height: "400px", ...props }}/>
+    )};
 
 export default SecondPage
 

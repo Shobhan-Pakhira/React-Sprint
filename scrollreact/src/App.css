@@ -67,26 +67,11 @@
 
 .card-wrapper{
   width: 50%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-/* .card:hover {
-  transform: scaleY(1.5);
-  background: #f1f1f1;
-  opacity: 50%;
-  margin: 4%;
- } */
-
-/* .cards:active {
-  transform: scaleY(2);
-  background: #ff8181;
-  opacity: 50%;
-  margin: 8%;
- } */
 
 .images{
   width: 100%;
@@ -100,6 +85,11 @@
   height: 400px;
   width: 400px;
   position: absolute;
+}
+
+.rendered-div{
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -828,3 +818,70 @@ h5{
   font-weight: 400;
   color: #868b9a;
 } 
+
+/* CardClick Styling */
+.wrapper-class{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 50px 50px 50px;
+  height: 800px;
+}
+
+.image-holder{
+  width: 45%;
+}
+
+.image{
+  height: 750px;
+  position: absolute;
+}
+
+.card-btn-selected {
+  width: 572px;
+  border-radius: 16px;
+  background-color: #f7f7f7;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px ;
+ }
+
+ .card-btn-content{
+  font-family: 'Ubuntu' , sans-serif;
+ }
+
+ .lead-content{
+  padding-bottom: 10px;
+ }
+
+ .support-content{
+  padding-bottom: 10px;
+ }
+
+ .link-btn{
+  background:rgba(0, 0, 0,0);
+  border: 0px;
+ }
+
+ .card-btn-unselected{
+  width: 572px;
+  height: 80px;
+  border-radius: 16px;
+  background-color: #dbdbdb;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+ }
+
+ .cart{
+  height: 40px;
+ }
+
+ .btn-div{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .arrow{
+  height: 20px;
+ }
