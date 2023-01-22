@@ -1,9 +1,12 @@
 import React from 'react'
-import arrow from '../assets/arrow-down.svg'
 import hand from '../assets/LandingPage/palm.svg'
 import background from '../assets/LandingPage/Background.jpg'
 import ring from '../assets/LandingPage/ring.png'
 import person from '../assets/LandingPage/person.jpg'
+import add from '../assets/LandingPage/add-new.svg'
+import mail from '../assets/LandingPage/mail.svg'
+import video from '../assets/LandingPage/video-call.svg'
+import stars from '../assets/LandingPage/star.png'
 
 const LandingPage = () => {
   return (
@@ -33,6 +36,17 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <div className='interact-btn'>
+          <button className='video-btn'>
+            <img src={video} alt='video' className='video'/>
+          </button>
+          <button className='add-btn'>
+            <img src={add} alt='video' className='add'/>
+          </button>
+          <button className='mail-btn'>
+            <img src={mail} alt='video' className='mail'/>
+          </button>
+        </div>
       </div>
     </div>
     <div className='footer'>
@@ -40,9 +54,39 @@ const LandingPage = () => {
         <div className='icn-group'>
           <img className='hand-icon' src={hand} alt='hand' />
         </div>
-        <p className='aux-text-footer'>10000+ teachers <br/> for any language you love</p>
+        <p className='aux-text-footer'>10000+ teachers </p>
+        <p className='aux-text-break'> for any language you love</p>
       </div>
-
+      <div className='right-group'>
+        <div className='card-top'>
+          <div className='teacher-cards-top'  style={{ backgroundImage:`url(${person})`,
+        backgroundSize:`cover`, backgroundPositionX:`-35px`}}></div>
+          <div className='teacher-cards-top'  style={{ backgroundImage:`url(${person})`,
+        backgroundSize:`cover`, backgroundPositionX:`-35px`}}></div>
+          <div className='teacher-cards-top'  style={{ backgroundImage:`url(${person})`,
+        backgroundSize:`cover`, backgroundPositionX:`-35px`}}></div>
+        </div>
+        <div className='card-bottom'>
+          <div className='teacher-cards-bottom'>
+            <div className='teacher-card-content'>
+              <h3 className='expertise'>English</h3>
+              <img className='rating' src={stars} alt='rating' />
+            </div>
+          </div>
+          <div className='teacher-cards-bottom'>
+            <div className='teacher-card-content'>
+              <h3 className='expertise'>Spanish</h3>
+              <img className='rating' src={stars} alt='rating' />
+            </div>
+          </div>
+          <div className='teacher-cards-bottom'>
+            <div className='teacher-card-content'>
+              <h3 className='expertise'>German</h3>
+              <img className='rating' src={stars} alt='rating' />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </>
   )
