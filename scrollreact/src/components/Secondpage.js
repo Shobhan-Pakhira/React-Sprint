@@ -13,8 +13,8 @@ import image5 from '../assets/CardClick/5.png'
     {title:'Product Discovery',image: image1,description:'Connect buyers with merchants tailored to them',icon:cart},
     {title:'SaaS Application Search',image: image2,description:'Decrease your application’s time to market by building the search and discovery experience with Algolia’s APIs.',icon:cart},
     {title:'Site Search',image: image3,description:'Increase web visitor conversions by enabling search and discovery across different types of website content.',icon:cart},
-    {title:'Content Discovery',image: image4,description:'Boost ad or subscription revenue by enabling search and discovery for digital media.',icon:arrow},
-    {title:'Enterprise & Workplace Search',image: image5,description:'Enable enterprise-grade customer search and discovery, while empowering employees to find information across company systems.',icon:arrow}
+    {title:'Content Discovery',image: image4,description:'Boost ad or subscription revenue by enabling search and discovery for digital media.',icon:cart},
+    {title:'Enterprise & Workplace Search',image: image5,description:'Enable enterprise-grade customer search and discovery, while empowering employees to find information across company systems.',icon:cart}
   ];
   const [myProfession, setMyProfession] = useState("Product Discovery");
   
@@ -26,10 +26,11 @@ import image5 from '../assets/CardClick/5.png'
         <div>
         {professions.map((profession,idx) =>(
           <div key={idx} onClick={()=> setMyProfession(profession.title)}>
-                  <div class="card-btn-selected">
+                  <div class="card-btn-selected" style={myProfession === profession.title ? {
+                    borderRadius: '16px', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', position: 'relative', zIndex: '1',
+                    borderBottom: '0px solid rgb(2, 0, 0)' }: {}}>
                     <div className='card-btn-icon' style={myProfession === profession.title ? {
-                      backgroundColor:'red'
-                    }: {}}>
+                      backgroundColor:'#003dff' }: {}}>
                         <img className='cart' src={profession.icon} alt='cart-icn'/>
                     </div>
                     <div className='card-btn-content'>
@@ -77,7 +78,7 @@ import image5 from '../assets/CardClick/5.png'
         <animated.img
             src={src}
             alt=""
-            style={{ width: "400px", height: "400px", ...props }}/>
+            style={{ width: "560px", height: "560px", ...props }}/>
     )};
 
 export default SecondPage
