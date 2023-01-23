@@ -45,36 +45,15 @@
 
 /* Second Page CSS */
 .second-page{
-  height: 100vh;
-  margin: 5%;
+  height: 500px;
+  margin: 80px;
   display: flex;
   flex-direction: row;
-}
-
-.heading-text{
-  display: flex;
-  flex-direction: row;
-}
-
-.card{
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-  height: 80px;
-  background: rgb(116, 116, 116);
-  /* transition: all 300ms;        */
-}
-
-.card-wrapper{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .images{
-  width: 100%;
+  width: 100;
   height: 50%;
   display: flex;
   flex-direction: row;
