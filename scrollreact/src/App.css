@@ -850,35 +850,6 @@ h5{
   color: #868b9a;
 } 
 
-/* CardClick Styling */
-.wrapper-class{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 50px 50px 50px 50px;
-  height: 800px;
-}
-
-.image-holder{
-  width: 45%;
-}
-
-.image{
-  height: 750px;
-  position: absolute;
-}
-
-
-
- .card-btn-unselected{
-  width: 572px;
-  height: 80px;
-  border-radius: 16px;
-  background-color: #dbdbdb;
-  border: 1px solid rgba(255, 255, 255, 0.3);
- }
-
-
 
 
 
