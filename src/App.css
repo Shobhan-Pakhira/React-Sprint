@@ -5,7 +5,7 @@
 }
 
 /* Front Page Styling */
-.front-page{
+/* .front-page{
   width: 100%;
   height: 100vh;
   color: white;
@@ -41,10 +41,10 @@
 
 .sub-title{
   font-size: 1.5rem;
-}
+} */
 
 /* Second Page CSS */
-.second-page{
+/* .second-page{
   height: 550px;
   margin: 80px 80px 80px 80px;
   display: flex;
@@ -121,11 +121,10 @@
  .btn-div{
   display: flex;
   flex-direction: row;
- }
-
+ } */
 
 /* Landing Page Styling */
-.landing-page{
+/* .landing-page{
   height: 880px;
   display: flex;
   padding: 0px 270px 0px 130px;
@@ -181,16 +180,9 @@
  
  .btn:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
  }
-
- /* .scroll-btn{
-  padding-top: 270px;
-  display: flex;
-  flex-direction: row;
- } */
 
  .scroll-btn{
   padding: 0;
@@ -501,10 +493,10 @@
   color: #ffff;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
- }
+ } */
 
  /* CardPage Styling*/
- .card-page{
+ /* .card-page{
   height: 850px;
   display: flex;
   flex-direction: column;
@@ -606,7 +598,6 @@
   padding-bottom: 60px;
  }
 
- /* Button Styling */
  .btn-more {
   display: inline-block;
   border-radius: 15px;
@@ -723,10 +714,13 @@
   position: absolute;
   transform: translateY( -14px );
   border-radius: 100px;
- }
+ } */
 
+
+
+ 
  /* Feature Page */
- .content-wrapper{
+ /* .content-wrapper{
   display: flex;
   flex-direction: column;
   height: 960px;
@@ -848,8 +842,4 @@ h5{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #868b9a;
-} 
-
-
-
-
+} */

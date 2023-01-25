@@ -1,9 +1,10 @@
 import React from 'react'
-import illustration from '../assets/illustrationMan.svg'
-import cloud from '../assets/cloud-protection.svg'
-import security from '../assets/security.svg'
-import search from '../assets/searching.svg'
-import malware from '../assets/malware.svg'
+import './FeaturePage.css'
+import illustration from '../../assets/FeaturePage/illustrationMan.svg'
+import cloud from '../../assets/FeaturePage/cloud-protection.svg'
+import security from '../../assets/FeaturePage/security.svg'
+import search from '../../assets/FeaturePage/searching.svg'
+import malware from '../../assets/FeaturePage/malware.svg'
 
 const FeaturePage = () => {
   return (

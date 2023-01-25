@@ -1,16 +1,15 @@
-import './App.css';
 import React from 'react';
-import Hero from './components/Hero';
-import SecondPage from './components/Secondpage';
-import LandingPage from './components/LandingPage';
-import CardPage from './components/CardPage';
-import FeaturePage from './components/FeaturePage';
+import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
+import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
+import LandingPage from './components/LandingPage/LandingPage';
+import CardPage from './components/CardPage/CardPage';
+import FeaturePage from './components/FeaturePage/FeaturePage';
 
 function App() {
   return (
     <>
-      <Hero/>
-      <SecondPage/>
+      <ScrollAnimation/>
+      <FeatureDisplay/>
       <LandingPage />
       <CardPage />
       <FeaturePage />
