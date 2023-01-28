@@ -1,11 +1,11 @@
 import React from "react";
-import "./Footer.css";
+// import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="main-container">
-      <div className="uper-heading">
-        <h3>
+    <div className="container">
+      <div className="uper-headin">
+        <h3 className="mt-5">
           The values that hold us,
           <br /> true and to account{" "}
         </h3>
@@ -49,18 +49,22 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="square-template mt-5">
-        <div className="squar-heading">
-          <div className="top-heading">
+      <div className="bg-success p-2 text-dark bg-opacity-25 p-5 mt-5">
+        <div className="row">
+          <div className="col-md-8">
             {/* <img>logo</img> */}
-            <h3>Ready for a simple future ?</h3>
+            <h3>
+              {" "}
+              Ready for a simple future ?
+              <br /> Let's get started!
+            </h3>
           </div>
-          <div className="bottom-heading">
-            <h3>Let's get started!</h3>
+
+          <div className="col-md-4  d-flex justify-content-end">
+            <button className="rounded w-50  ">
+              <b> Get started</b>
+            </button>
           </div>
-        </div>
-        <div className="square-button">
-          <button>Get started</button>
         </div>
       </div>
 
@@ -69,7 +73,6 @@ const Footer = () => {
       <div className="footer text-start">
         <div className="row mt-5">
           <div className="col-md-2">
-            {/* <img src="" alt="" /> */}
             <span className="text-dark"> &copy; 2018</span>
           </div>
 
@@ -77,11 +80,11 @@ const Footer = () => {
             <h4 className="text-dark">Customer</h4>
             <ul>
               <li>
-                <a href="_#">Buyer</a>
+                <a href="_#" className="text-decoration-none">Buyer</a>
               </li>
 
               <li>
-                <a href="_#">Supplier</a>
+                <a href="_#" className="text-decoration-none">Supplier</a>
               </li>
             </ul>
           </div>
@@ -90,26 +93,25 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="#_">about us</a>
+                <a href="#_" className="text-decoration-none">about us</a>
               </li>
               <li>
-                <a href="#_">Career</a>
+                <a href="#_"className="text-decoration-none">Career</a>
               </li>
               <li>
-                <a href="#_">Contact us</a>
+                <a href="#_" className="text-decoration-none">Contact us</a>
               </li>
             </ul>
           </div>
 
           <div className="col-md-2 ">
             <h5 className="text-dark">Further information</h5>
-            <ul>
-              <li>
-                {" "}
-                <a href="#_">Terms and conditions</a>
+            <ul className="list-group">
+              <li className="list-group-item"> 
+                <a href="#_"className="text-decoration-none border border-white">Terms and conditions</a>
               </li>
               <li>
-                <a href="#_">Privacy Policy</a>
+                <a href="#_"className="text-decoration-none">Privacy Policy</a>
               </li>
             </ul>
           </div>

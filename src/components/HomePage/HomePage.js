@@ -1,78 +1,79 @@
 import React from "react";
-import "./HomePage.css";
-import IntelLogo from "../../assests/HomePage/IntelLogo.png"
-import HexagoneShape from "../../assests/HomePage/HexagoneShape.png";
+import IntelLogo from "../../assets/HomePage/IntelLogo.png";
+import HexagoneShape from "../../assets/HomePage/HexagoneShape.png";
 
 const HomePage = () => {
   return (
-    <div className="background">
-      <div className="">
-        {/* <img className="background-image" src={HomePagebackground}/> */}
-      
-      <div className="Container-top">
-        
-        <img className="hex-img text-center" src={HexagoneShape} />
-        
-        <div className="numbers" />
-        <div className="box-rigth pt-5">
-          <div className="row">
-            <div className="col-4 ">
-              <h2>100%</h2>
+    <div className="container">
+      <div className="row">
+         
+        <div className="d-flex p-4 mt-5">
+          <div className="col-md-4">
+        <img className="img-fluid w-75 p-4" src={HexagoneShape} alt=''/>
+
+        </div>
+
+          <div className="col-md-8">
+
+          <div className="row  mt-5 ">
+            <div className="col-md-4">
+              <h3>100%</h3>
+              <p>SaaS technologya</p>
+            </div>
+            <div className="col-md-4">
+              <h3>100%</h3>
+
               <p>SaaS technology</p>
             </div>
-            <div className="col-4 ">
-              <h2>100+</h2>
-              <p>Threat intel sources</p>
-            </div>
-            <div className="col-4">
-              <h2>100+</h2>
-              <p>Threat intel sources</p>
+            <div className="col-md-4">
+              <h3> 100%</h3>
+
+              <p>SaaS technology</p>
             </div>
           </div>
 
-          <div className="row mt-5">
-            <div className="col-4">
-              <h2>100%</h2>
+          <div className="row  mt-5 ">
+            <div className="col-md-4">
+              <h3>100%</h3>
+              <p>SaaS technologya</p>
+            </div>
+            <div className="col-md-4">
+              <h3>100%</h3>
+
               <p>SaaS technology</p>
             </div>
-            <div className="col-4 ">
-              <h2>1,400+</h2>
-              <p>Buit in queries</p>
-            </div>
-            <div className="col-4">
-              <h2>200+</h2>
-              <p>Costomer</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div className="col-md-4">
+              <h3>100%</h3>
 
-      <div className="footer-box mt-5">
-      <div className="logo-img">
-        <div className="row">
-          <div className="col-2">
-            <img className="logo" src={IntelLogo} />
+              <p>SaaS technology</p>
+            </div>
+          </div>
+          </div>
+          </div>
+
+         
+        <div className="row mt-5 ps-5 mb-5  d-flex justify-content-center ">
+          <div className="col-2 ">
+            <img className="d-flex p-1 w-50" src={IntelLogo} alt='_' />
           </div>
           <div className="col-2">
-            <img className="logo" src={IntelLogo} />
+            <img className="d-flex p-1 w-50" src={IntelLogo} alt='' />
           </div>
           <div className="col-2">
-            <img  className="logo"src={IntelLogo} />
+            <img className="d-flex p-1 w-50" src={IntelLogo} alt='' />
           </div>
           <div className="col-2">
-            <img className="logo" src={IntelLogo} />
+            <img className="d-flex p-1 w-50" src={IntelLogo} alt='' />
           </div>
           <div className="col-2">
-            <img className="logo" src={IntelLogo} />
+            <img className="d-flex p-1 w-50" src={IntelLogo} alt=''/>
           </div>
           <div className="col-2">
-            <img className="logo" src={IntelLogo} />
+            <img className="d-flex p-1 w-50" src={IntelLogo}  alt='' />
           </div>
-          </div>
-         </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
