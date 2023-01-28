@@ -1,0 +1,13 @@
+.main-container{
+    background-color: #CCC;
+    padding: 100px 170px ;
+    
+}
+.upper-heading{
+    width: 30%;
+}
+
+.row-heading{
+    /* display:flex; */
+    width: 70%;
+}
