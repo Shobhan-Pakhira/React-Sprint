@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="uper-headin">
         <h3 className="mt-5">
           The values that hold us,

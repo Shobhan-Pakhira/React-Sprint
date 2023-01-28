@@ -11,14 +11,14 @@ import HomePage from './components/HomePage/HomePage'
 function App() {
   return (
     <>
-      <ScrollAnimation/>
+      {/* <ScrollAnimation/>
       <FeatureDisplay/>
       <LandingPage />
       <CardPage />
-      <FeaturePage />
+      <FeaturePage /> */}
       <SupportFeature />
       <Footer />
-      <HomePage />
+      {/* <HomePage /> */}
     </>
   );
 }
