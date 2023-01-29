@@ -27,9 +27,9 @@ const LandingPage = () => {
 					<p className="aux-text">
 						Choose from over 10000 teachers and excel your favourite language.
 					</p>
-					<div className="btn-group">
-						<button className="btn"> Get Started</button>
-						<button className="btn">Learn More</button>
+					<div className="btnn-group">
+						<button className="btnn"> Get Started</button>
+						<button className="btnn">Learn More</button>
 					</div>
 					<button className="scroll-btn">
 						<p>Scroll to Bottom</p>
