@@ -4,11 +4,12 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="container">
-      <h3 className="mt-5">
-        The values that hold us,
-        <br /> true and to account{" "}
-      </h3>
-
+  
+        <h3 className="mt-5">
+          The values that hold us,
+          <br /> true and to account{" "}
+        </h3>
+      
       <div className="row mt-5">
         <div className="col-md-4">
           {/* <img src={square}/> */}
