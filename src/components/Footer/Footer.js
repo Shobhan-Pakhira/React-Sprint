@@ -4,47 +4,43 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="container">
-      <div className="uper-headin">
-        <h3 className="mt-5">
-          The values that hold us,
-          <br /> true and to account{" "}
-        </h3>
-      </div>
+      <h3 className="mt-5">
+        The values that hold us,
+        <br /> true and to account{" "}
+      </h3>
+
       <div className="row mt-5">
         <div className="col-md-4">
           {/* <img src={square}/> */}
-          <div className="row-heading">
-            <h5> Simplicity</h5>
-            <div className="para">
-              <p>
-                Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque
-                non iusto nihiaS technology
-              </p>
-            </div>
+
+          <h5> Simplicity</h5>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
+              iusto nihiaS technology
+            </p>
           </div>
         </div>
         <div className="col-md-4">
           {/* <img src={square}/> */}
-          <div className="row-heading">
-            <h5>Social Good</h5>
-            <div className="para">
-              <p>
-                Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque
-                non iusto nihi
-              </p>
-            </div>
+
+          <h5>Social Good</h5>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
+              iusto nihi
+            </p>
           </div>
         </div>
         <div className="col-md-4">
           {/* <img src={square}/> */}
-          <div className="row-heading">
-            <h5> trust</h5>
-            <div className="para">
-              <p>
-                Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque
-                non iusto nihistomer
-              </p>
-            </div>
+
+          <h5> trust</h5>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
+              iusto nihistomer
+            </p>
           </div>
         </div>
       </div>
@@ -70,55 +66,67 @@ const Footer = () => {
 
       {/* footer */}
 
-      <div className="footer text-start">
-        <div className="row mt-5">
-          <div className="col-md-2">
-            <span className="text-dark"> &copy; 2018</span>
-          </div>
+      <div className="row mt-5">
+        <div className="col-md-2">
+          <span className="text-dark"> &copy; 2018</span>
+        </div>
 
-          <div className="col-md-2">
-            <h4 className="text-dark">Customer</h4>
-            <ul>
-              <li>
-                <a href="_#" className="text-decoration-none">Buyer</a>
-              </li>
+        <div className="col-md-2">
+          <h4 className="text-dark">Customer</h4>
+          <ul  className="list-group list-group-light">
+            <li className="list-group-item px-3 border-0 ">
+              <a href="_#" className="text-decoration-none">
+                Buyer
+              </a>
+            </li>
 
-              <li>
-                <a href="_#" className="text-decoration-none">Supplier</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-2 ">
-            <h4 className="text-dark">Company</h4>
+            <li className="list-group-item px-3 border-0 ">
+              <a href="_#" className="text-decoration-none">
+                Supplier
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="col-md-2 ">
+          <h4 className="text-dark">Company</h4>
 
-            <ul>
-              <li>
-                <a href="#_" className="text-decoration-none">about us</a>
-              </li>
-              <li>
-                <a href="#_"className="text-decoration-none">Career</a>
-              </li>
-              <li>
-                <a href="#_" className="text-decoration-none">Contact us</a>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li className="list-group-item px-3 border-0 ">
+              <a href="#_" className="text-decoration-none">
+                about us
+              </a>
+            </li>
+            <li className="list-group-item px-3 border-0 ">
+              <a href="#_" className="text-decoration-none">
+                Career
+              </a>
+            </li>
+            <li className="list-group-item px-3 border-0 ">
+              <a href="#_" className="text-decoration-none">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div className="col-md-2 ">
-            <h5 className="text-dark">Further information</h5>
-            <ul className="list-group">
-              <li className="list-group-item"> 
-                <a href="#_"className="text-decoration-none border border-white">Terms and conditions</a>
-              </li>
-              <li>
-                <a href="#_"className="text-decoration-none">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
+        <div className="col-md-2 ">
+          <h5 className="text-dark">Further information</h5>
+          <ul className="list-group">
+            <li className="list-group-item px-3 border-0">
+              <a href="#_"  className="text-decoration-none" >
+                Terms and conditions
+              </a>
+            </li>
+            <li className="list-group-item px-3 border-0 ">
+              <a href="#_" className="text-decoration-none">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div className="col-md-4 ">
-            <h4 className="text-dark">Follow us</h4>
-          </div>
+        <div className="col-md-4 ">
+          <h4 className="text-dark">Follow us</h4>
         </div>
       </div>
     </div>
