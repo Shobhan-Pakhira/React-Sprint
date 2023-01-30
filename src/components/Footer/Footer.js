@@ -1,136 +1,155 @@
 import React from "react";
-
+import "./Footer.css";
+import heartlogo from "../../assets/Footer/heartlogo.avif"
 
 const Footer = () => {
   return (
-    <div className="container">
-  
-        <h3 className="mt-5">
+    <div className="background">
+    <div className=" top-contanier ">
+    
+        <h1 className="text-light pt-4">
           The values that hold us,
           <br /> true and to account{" "}
-        </h3>
+        </h1>
       
-      <div className="row mt-5">
-        <div className="col-md-4">
+      <div className="row justify-content-between text-center text-md-start mt-5 pb-5">
+        <div className="col-md-3  ">
           {/* <img src={square}/> */}
+          <div className="row ">
+            <div className="col-md-1 mr-1">
+           <img className="heartlogo " src={heartlogo} alt=""/>   
+            </div>
+            <div className="col-md-3">
+            <h5 className="text-light"> Simplicity</h5>
+            </div>
+            
+            <div className="para">
+            <p className="text-light mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 
-          <h5> Simplicity</h5>
-          <div className="para">
-            <p>
-              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
-              iusto nihiaS technology
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3">
           {/* <img src={square}/> */}
+          <div className="row">
+            <div className="col-md-1">
+              <img className="heartlogo" src={heartlogo} alt=""/>
+            </div>
+            <div className="col-md-4 w-75">
+            <h5 className="text-light"> Social Good</h5>
+            </div>
+            <div className="para">
+            <p className="text-light mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 
-          <h5>Social Good</h5>
-          <div className="para">
-            <p>
-              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
-              iusto nihi
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3">
           {/* <img src={square}/> */}
+          <div className="row">
+            <div className="col-md-1">
+              <img className="heartlogo" src={heartlogo} alt=""/>
+            </div>
+            <div className="col-md-3">
+            <h5 className="text-light"> Trust</h5>
+            </div>
+            <div className="para">
+              <p className="text-light mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 
-          <h5> trust</h5>
-          <div className="para">
-            <p>
-              Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
-              iusto nihistomer
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-success p-2 text-dark bg-opacity-25 p-5 mt-5">
+      <div className="square pt-5 mt-5">
         <div className="row">
           <div className="col-md-8">
             {/* <img>logo</img> */}
-            <h3>
-              {" "}
+            <h2 className="text-light">
               Ready for a simple future ?
-              <br /> Let's get started!
-            </h3>
+            <h2 className="text-dark"> Let's get started!</h2>
+            </h2>
           </div>
 
-          <div className="col-md-4  d-flex justify-content-end">
-            <button className="rounded w-50  ">
-              <b> Get started</b>
+          <div className="col-md-4 d-flex justify-content-end mt-3 rounded">
+            <button className="button btn btn-dark btn-sm">
+              <p> Get started</p>
             </button>
           </div>
         </div>
       </div>
 
-      {/* footer */}
 
-      <div className="row mt-5">
-        <div className="col-md-2">
-          <span className="text-dark"> &copy; 2018</span>
-        </div>
+<div className="footer">
+  <div className="row justify-content-around text-center text-md-start mt-5 pt-3">
 
-        <div className="col-md-2">
-          <h4 className="text-dark">Customer</h4>
-          <ul  className="list-group list-group-light">
-            <li className="list-group-item px-3 border-0 ">
-              <a href="_#" className="text-decoration-none">
-                Buyer
-              </a>
-            </li>
+  <div className="col-md-2">
+            <span className="text-light"> &copy; 2018</span>
+          </div> 
+    <div className="col-md-2">
 
-            <li className="list-group-item px-3 border-0 ">
-              <a href="_#" className="text-decoration-none">
-                Supplier
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="col-md-2 ">
-          <h4 className="text-dark">Company</h4>
+  <ul className="list-unstyled">
+    <li className="fw-bold my-2 text-light">Customers</li>
+    <li className="text-decoration-none text-secondary">Buyer</li>
+    <li className="text-decoration-none text-secondary">Supplier</li>
+</ul>
+</div>
+<div className="col-md-2">
+  <ul className="list-unstyled">
+    <li className="fw-bold my-2 text-light">Company</li>
+    <li><a herf="#" className="text-decoration-none text-secondary">About us</a></li>
+    <li><a herf="#" className="text-decoration-none text-secondary">Career</a></li>
+     <li><a herf="#" className="text-decoration-none text-secondary">Contact us</a></li>
+  </ul>
+</div>
+<div className="col-md-3">
+  <ul className="list-unstyled">
+    <li className="fw-bold my-2 text-light">Further Information</li>
+    <li><a herf="#" className="text-decoration-none text-secondary">Terms & Conditions</a></li>
+    <li><a herf="  " className="text-decoration-none text-secondary">Privacy Policy</a></li>
+ </ul>
+</div>
 
-          <ul>
-            <li className="list-group-item px-3 border-0 ">
-              <a href="#_" className="text-decoration-none">
-                about us
-              </a>
-            </li>
-            <li className="list-group-item px-3 border-0 ">
-              <a href="#_" className="text-decoration-none">
-                Career
-              </a>
-            </li>
-            <li className="list-group-item px-3 border-0 ">
-              <a href="#_" className="text-decoration-none">
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </div>
+<div className="col-md-3">
+  <li className="fw-bold my-2 list-unstyled text-white">Follow us</li>
+  <ul className="list-unstyled d-flex justify-content-center justify-content-md-start">
+    <li><a herf="#" className="text-decoration-none text-secondary">FA</a></li>
+    <li><a herf="#" className="text-decoration-none text-secondary">FA</a></li>
+     <li><a herf="#" className="text-decoration-none text-secondary">FA</a></li>
+  </ul>
+</div>
 
-        <div className="col-md-2 ">
-          <h5 className="text-dark">Further information</h5>
-          <ul className="list-group">
-            <li className="list-group-item px-3 border-0">
-              <a href="#_"  className="text-decoration-none" >
-                Terms and conditions
-              </a>
-            </li>
-            <li className="list-group-item px-3 border-0 ">
-              <a href="#_" className="text-decoration-none">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
+<div className=""></div>
+</div>
+</div>
+</div>
 
-        <div className="col-md-4 ">
-          <h4 className="text-dark">Follow us</h4>
-        </div>
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    
   );
 };
 
