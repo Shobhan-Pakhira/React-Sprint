@@ -1,0 +1,48 @@
+
+.top-contanier{
+    background-color: rgb(5, 3, 25);
+    padding: 50px 140px 50px 140px;
+}
+.para{
+     font-size: 15px;
+    font-weight: lighter;
+    color: rgb(193, 191, 191); 
+
+}
+/* .row-heading{
+    width: 25%;
+    margin: 35px;
+} */
+.heartlogo{
+    width: 25px;
+   
+}
+.button{
+    height: 35px;
+}
+.heera{
+    width: 80%;
+}
+.square{
+    padding: 65px;
+    background-color: rgb(160, 113, 248);
+}
+
+@media screen and (min-width:1201px) and ( max-width:2000){
+    .top-contanier{
+        padding: 50px 1800px 50px 180px;
+    }
+    .para{
+         font-size: 15px;
+    }
+    .square{
+        padding: 80px;
+        background-color: rgb(160, 113, 248);
+    }
+} 
+
+
+    
+
+
+
