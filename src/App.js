@@ -5,10 +5,10 @@ import ScrollCard from './components/ScrollCard/ScrollCard';
 // import LandingPage from './components/LandingPage/LandingPage';
 // import CardPage from './components/CardPage/CardPage';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
-// import SupportFeature from './components/SupportFeature/SupportFeature';
-// import Footer from './components/Footer/Footer';
-// import HomePage from './components/HomePage/HomePage'
-// import Animation from './components/Animation/Animation';
+import SupportFeature from './components/SupportFeature/SupportFeature';
+import Footer from './components/Footer/Footer';
+import HomePage from './components/HomePage/HomePage'
+import Animation from './components/Animation/Animation';
 
 
 function App() {
@@ -20,11 +20,11 @@ function App() {
       <LandingPage />
       <CardPage />
       <FeaturePage />  */}
-      {/* <Animation /> */}
-      {/* <SupportFeature /> 
+      <Animation />
+      <SupportFeature /> 
       <Footer />
-      <HomePage />  */}
-      <ScrollCard/>
+      <HomePage /> 
+      {/* <ScrollCard/> */}
     </>
   );
 }
