@@ -7,7 +7,8 @@ import React from 'react';
 // import SupportFeature from './components/SupportFeature/SupportFeature';
 // import Footer from './components/Footer/Footer';
 // import HomePage from './components/HomePage/HomePage'
-import ScrollCard from './components/ScrollCard/ScrollCard'
+import Animation from './components/Animation/Animation';
+
 
 function App() {
   return (
@@ -15,12 +16,15 @@ function App() {
       {/* <LandingPage /> */}
      {/* <ScrollAnimation/>
       <FeatureDisplay/>
-      {/* <CardPage /> */}
-      {/* <FeaturePage /> */}
-      {/* <SupportFeature />  */}
-      {/* <Footer /> */}
-      {/* <HomePage />  */}
-      <ScrollCard/>
+      <LandingPage />
+      <CardPage />
+  <FeaturePage />  */}
+       <Animation />
+      {/* <SupportFeature /> 
+      <Footer />
+      
+
+      <HomePage />  */}
     </>
   );
 }

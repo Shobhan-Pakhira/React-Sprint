@@ -1,72 +1,19 @@
-.hexagon
-{
-  position: relative;
-  width: 300px; 
-  height: 173.21px;
-  background-color: white;
-  margin: 86.60px 0;
-  /* border-radius: 20px;  */
-  /* transform: rotate(60deg); */
 
-}
-.hexagon::before,
-.hexagon::after
-{
-  content: "";
-  position: absolute;
-	left: 0; /* added */
-  width: 0;
-  /* border-radius: 20px ; */
-
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-}
-.hexagon::before
-{
-  bottom: 100%;
-  border-radius: 2px ;
-  border-bottom: 86.60px solid white;
-  /* border-radius: 20px; */
-}
-.hexagon::after
-{
-  top: 100%;
-  width: 0;
-  /* border-radius: 2px ; */
-
-  border-top: 86.60px solid white;
-  /* border-radius: 20px; */
-}
 .background{
-  padding: 70px;
-  background-color: #ccc;
-  height: 100%;
+  background: url(../../assets/HomePage/HomePagebg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.Container-top{
-   
-    display: flex;
+
+@media screen and (min-width:320px) and ( max-width:600px){
 }
-.footer-box {
-  padding: 6px 170px;
+
+@media screen and (min-width:601px) and ( max-width:1024px){
 
 }
 
-/* img{
-  max-width: 55px;
+@media screen and (min-width:1021px){
 }
 
-h2{
-  font-size: 25px;
-  font-weight: 700;
-}
 
-p{
-  color: rgb(116, 110, 110);
-}
-.numbers{
- margin-left: 160px;
-}
 
-.col-4{
-  padding: 0 30px
-} */
