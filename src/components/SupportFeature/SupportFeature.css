@@ -1,4 +1,4 @@
-.container{
+/* .container{
     max-width: 860px;
     padding-top: 40px;
   }
@@ -24,4 +24,29 @@
   }
   .para{
     font-size: 13px;
-  }
+  } */
+
+
+
+
+.body{
+  padding: 60px;
+}
+.background{
+  background: url(../../assets/SupportFeature/SupportFeaturebg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*color
+
+#f5f6f8
+rgb(245,246,248) */
+
+/* #121e2a
+rgb(18,30,42)
+
+
+#816df0
+rgb(129,109,240) */
