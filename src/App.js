@@ -14,17 +14,22 @@ import Animation from './components/Animation/Animation';
 function App() {
   return (
     <>
-      {/* <LandingPage /> */}
       {/* <ScrollAnimation/>
       <FeatureDisplay/>
       <LandingPage />
       <CardPage />
-      <FeaturePage />  */}
-      <Animation />
-      <SupportFeature /> 
+  <FeaturePage />  
+       <Animation /> */}
+      {/* <SupportFeature /> 
       <Footer />
-      <HomePage /> 
-      {/* <ScrollCard/> */}
+      
+
+       */}
+
+{/* <HomePage /> 
+<Footer />
+<SupportFeature /> */}
+<Animation />
     </>
   );
 }
