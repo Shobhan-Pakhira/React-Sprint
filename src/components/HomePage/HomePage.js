@@ -5,7 +5,7 @@ import "./HomePage.css"
 const HomePage = () => {
   return (
     <div className="background">
-    <div className="container">
+    <div className="container-fluid">
       <div className="row justify-content-between ">
          
         <div className="d-flex p-4 mt-5">
