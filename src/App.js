@@ -5,9 +5,9 @@ import FeatureDisplay from './components/FeatureDisplay/FeatureDisplay';
 // import LandingPage from './components/LandingPage/LandingPage';
 // import CardPage from './components/CardPage/CardPage';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
-// import SupportFeature from './components/SupportFeature/SupportFeature';
-// import Footer from './components/Footer/Footer';
-// import HomePage from './components/HomePage/HomePage'
+import SupportFeature from './components/SupportFeature/SupportFeature';
+import Footer from './components/Footer/Footer';
+import HomePage from './components/HomePage/HomePage'
 // import Animation from './components/Animation/Animation';
 
 
@@ -17,6 +17,10 @@ function App() {
       <ScrollAnimation />
       <ScrollCard />
       <FeatureDisplay />
+      <SupportFeature />
+      <HomePage />
+      {/* <Animation /> */}
+      <Footer />
     </>  
   );
 }
