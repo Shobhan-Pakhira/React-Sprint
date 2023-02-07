@@ -6,11 +6,12 @@ import React from 'react';
 // import FeaturePage from './components/FeaturePage/FeaturePage';
 // import SupportFeature from './components/SupportFeature/SupportFeature';
 // import Footer from './components/Footer/Footer';
-import HomePage from './components/HomePage/HomePage'
+// import HomePage from './components/HomePage/HomePage'
 // import Animation from './components/Animation/Animation';
 // import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
 // import VideoAnimated from './components/VideoAnimated/VideoAnimated';
 // import VideoAnimation from '/components/VideoAnimation/VideoAnimation';
+import PrlxAnimation from "./components/PrlxAnimation/PrlxAnimation"
 
 
 
@@ -22,7 +23,7 @@ function App() {
       <LandingPage />
       <CardPage />
       <FeaturePage />  
-      <Animation /> 
+      
       <SupportFeature /> 
       <Footer />
       
@@ -33,12 +34,12 @@ function App() {
     <Footer />
     <SupportFeature /> 
     <Animation />  
-    <VideoAnimation /> */}
-    {/* <VideoAnimated />  */}
-    {/* <VideoAnimation /> */}
-    {/* <Animation />  */}
-    
-    <HomePage /> 
+    <VideoAnimation /> 
+    <VideoAnimated />  
+     <VideoAnimation /> 
+    <Animation />   
+    <Animation /> */}
+  <PrlxAnimation /> 
     </>
   );
 }

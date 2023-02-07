@@ -4,8 +4,9 @@ import HexagoneShape from "../../assets/HomePage/HexagoneShape.png";
 import "./HomePage.css"
 const HomePage = () => {
   return (
-    <div className="background">
+   
     <div className="container-fluid">
+       <div className="background">
       <div className="row justify-content-between ">
          
         <div className="d-flex p-4 mt-5">
