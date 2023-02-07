@@ -109,8 +109,7 @@ const Animation = () => {
         <ParallaxLayer offset={0} speed={1.5}>
           <img
             className="bg-dark w-100 bg-secondary bg-gradient " alt="" src={mountainsbehind} />
-                      <AnimatedHeader  style={{ opacity: headerOpacity }}  >
-                        <div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
+        <AnimatedHeader style={{ opacity: headerOpacity }}><div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
          
         </ParallaxLayer>
 
@@ -123,7 +122,7 @@ const Animation = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.5} >
-          <div className="container">
+          <div className="container position-sticky">
             <h1>Your text header</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -132,7 +131,6 @@ const Animation = () => {
             </p>
           </div>
         </ParallaxLayer>
-
       </Parallax>
     </>
   );

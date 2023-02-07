@@ -27,8 +27,7 @@ function SupportFeature() {
             <img className="w-50" src={log1}  alt='' />
 
             <h5 className="mt-5"> Watch online video</h5>
-
-            <p>
+             <p>
               Lorem ipsum dolor sit amet. Et aliquam autem ex ducimus atque non
               iusto nihiaS technology
             </p>
