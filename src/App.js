@@ -8,22 +8,39 @@ import React from 'react';
 // import SupportFeature from './components/SupportFeature/SupportFeature';
 // import Footer from './components/Footer/Footer';
 // import HomePage from './components/HomePage/HomePage'
-import CertificateVerfication from './components/CertificateVerification/CertificateVerfication';
-// import Animation from './components/Animation/Animation';
+import Animation from './components/Animation/Animation';
+// import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
+// import VideoAnimated from './components/VideoAnimated/VideoAnimated';
+// import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
+// import PrlxAnimation from "./components/PrlxAnimation/PrlxAnimation"
+
 
 
 function App() {
   return (
     <>
-      {/* <ScrollAnimation />
-      <ScrollCard />
-      <FeatureDisplay />
-      <SupportFeature />
-      <HomePage /> */}
-      {/* <Animation /> */}
-      {/* <Footer /> */}
-      <CertificateVerfication />
-    </>  
+      {/* <ScrollAnimation/>
+      <FeatureDisplay/>
+      <LandingPage />
+      <CardPage />
+      <FeaturePage />  
+    <SupportFeature /> 
+    <Footer />
+    <HomePage /> 
+    <Footer />
+    <Animation />  
+    <VideoAnimation /> 
+    <VideoAnimated />  
+    <VideoAnimation /> 
+    <SupportFeature />
+     <VideoAnimation /> 
+<PrlxAnimation />
+     */}
+   <Animation />
+   
+    
+  
+    </>
   );
 }
 

@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="row justify-content-between  mt-5 pb-5">
           <div className="col-md-3  ">
-            {/* <img src={square}/> */}
+          
             <div className="row ">
               <div className="col-md-1 mr-1">
                 <img className="heartlogo " src={heartlogo} alt="" />
@@ -32,8 +32,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            {/* <img src={square}/> */}
-            <div className="row">
+          
+            <div className="row ">
               <div className="col-md-1">
                 <img className="heartlogo" src={heartlogo} alt="" />
               </div>
@@ -50,8 +50,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            {/* <img src={square}/> */}
-            <div className="row">
+          
+            <div className="row ">
               <div className="col-md-1">
                 <img className="heartlogo" src={heartlogo} alt="" />
               </div>

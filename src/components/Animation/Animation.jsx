@@ -1,70 +1,136 @@
-import React, { useRef } from "react";
+
+
+
+// // import React, {useRef, useEffect}from "react";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import mountainsbehind from "../../assets/Animation/mountainsbehind.png";
+// import mountainsfront from "../../assets/Animation/mountainsfront.png";
+// import stars from "../../assets/Animation/stars.png";
+// import { animated} from 'react-spring'
+// import { useEffect } from "react";
+
+
+// const AnimatedHeader = animated(({ style, children }) => {
+//   return <h1 style={{ ...style, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>{children}</h1>;
+// });
+
+// const Animation = () => {
+//   // const ref = useRef();
+//   // const [parallaxScroll, setParallaxScroll] = useState(0);
+//   // const animationProps = useSpring({
+//   //   opacity: parallaxScroll >= 1 ? 0 : 1,
+//   // });
+
+//   // const handleScroll = (event) => {
+//   //   setParallaxScroll(event.target.scrollTop / event.target.offsetHeight);
+//   // };
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setHeaderOpacity(1 - window.pageYOffset / 700);
+//       // setHeaderBgSize(`${160 - window.pageYOffset / 20}%`);
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+
+//   return (
+//     <>
+//       <Parallax pages={2} ref={ref}>
+//         <ParallaxLayer offset={0} speed={1.5}>
+//           <img
+//             className="bg-dark w-100 bg-secondary bg-gradient " alt="" src={mountainsbehind} />
+//                       <AnimatedHeader  style={{ opacity: headerOpacity }}  >
+//                         <div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
+         
+//         </ParallaxLayer>
+
+//         <ParallaxLayer offset={0} speed={2.0} >
+//           <img className="w-100" alt="" src={stars} />
+//         </ParallaxLayer>
+
+//         <ParallaxLayer offset={0} speed={2.0}>
+//           {/* <AnimatedHeader style={animationProps}  onScroll={handleScroll}><div className="text-center text-light"> Your Text Header</div></AnimatedHeader> */}
+//           <img className="w-100" alt="" src={mountainsfront} />
+//         </ParallaxLayer>
+
+//         <ParallaxLayer offset={1} speed={0.5} >
+//           <div className="container">
+//             <h1>Your text header</h1>
+//             <p>
+//               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+//               enim ad minim  Excepteur sint occaecat cupidatat non proident
+//               sunt in culpa qui officia deserunt mollit anim id est laborum.
+//             </p>
+//           </div>
+//         </ParallaxLayer>
+
+//       </Parallax>
+//     </>
+//   );
+// };
+
+// export default Animation;
+
+
+import React, {useRef, useState, useEffect} from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-// import './Animation.css'
-// import mountainbg from "../../assets/Animation/mountainbg.jpg"
-// import mountain1 from "../../assets/Animation/mountain1.png"
-// import mountain2 from "../../assets/Animation/mountain2.png"
 import mountainsbehind from "../../assets/Animation/mountainsbehind.png";
 import mountainsfront from "../../assets/Animation/mountainsfront.png";
-// import moon from "../../assets/Animation/moon.png"
 import stars from "../../assets/Animation/stars.png";
+import { animated } from 'react-spring'
+
+const AnimatedHeader = animated(({ style, children }) => {
+  return <h1 style={{ ...style, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>{children}</h1>;
+});
 
 const Animation = () => {
   const ref = useRef();
+  const [headerOpacity, setHeaderOpacity] = useState(1);
+  // const [headerBgSize, setHeaderBgSize] = useState('160%');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeaderOpacity(1 - window.pageYOffset / 700);
+      // setHeaderBgSize(`${160 - window.pageYOffset / 20}%`);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <Parallax pages={2} ref={ref} className="animation">
+      <Parallax pages={2} ref={ref}>
         <ParallaxLayer offset={0} speed={1.5}>
           <img
-            className="bg-dark w-100 bg-secondary bg-gradient "
-            src={mountainsbehind}
-          />
+            className="bg-dark w-100 bg-secondary bg-gradient " alt="" src={mountainsbehind} />
+        <AnimatedHeader style={{ opacity: headerOpacity }}><div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
+         
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={2.0} >
+          <img className="w-100" alt="" src={stars} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={2.0}>
-          <img className="w-100" src={stars} />
+          <img className="w-100" alt="" src={mountainsfront} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={2.0}>
-          <img className="w-100" src={mountainsfront} />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={1}>
-          <div className="container">
+        <ParallaxLayer offset={1} speed={0.5} >
+          <div className="container position-sticky">
             <h1>Your text header</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in volupta te velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mol lit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim ve niam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate ve lit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim  Excepteur sint occaecat cupidatat non proident
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </ParallaxLayer>
-
-        {/* <ParallaxLayer offset={1} speed={-2} factor={1.5} horizontal />
-
-      <ParallaxLayer sticky={{ start: 1, end: 2 }} /> 
-
-      <ParallaxLayer offset={2} speed={1}>
-        <button onClick={() => ref.current.scrollTo(0)}>Scroll to top</button>
-      </ParallaxLayer>  */}
       </Parallax>
     </>
   );
