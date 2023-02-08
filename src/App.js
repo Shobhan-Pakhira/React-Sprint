@@ -10,8 +10,7 @@ import React from 'react';
 // import HomePage from './components/HomePage/HomePage'
 import Animation from './components/Animation/Animation';
 // import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
-// import VideoAnimated from './components/VideoAnimated/VideoAnimated';
-// import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
+import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
 import PrlxAnimation from "./components/PrlxAnimation/PrlxAnimation"
 
 
@@ -32,12 +31,11 @@ function App() {
     <VideoAnimated />  
     <VideoAnimation /> 
     <SupportFeature />
-    <VideoAnimation /> 
     <Animation />
   */}
-   
-    {/* <Animation />   */}
-   <PrlxAnimation /> 
+  <PrlxAnimation />
+   <VideoAnimation />
+    
    
     
   

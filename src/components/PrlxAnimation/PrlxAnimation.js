@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from "react";
-import bg from "../../assets/pelxAnimation/bg.jpg";
+import bg from "../../assets/pelxAnimation/bg.webp";
 import { animated } from 'react-spring'
 // import "./Animation.css";
 
 
 const AnimatedHeader = animated(({ style, children }) => {
-  return <h1 style={{ ...style, position: 'absolute', top: '80%', left: '50%', transform: 'translate(-50%, -50%)' }}>{children}</h1>;
+  return <h1 style={{ ...style, position: 'absolute', top: '60%', left: '50%', transform: 'translate(-50%, -50%)' }}>{children}</h1>;
 });
 
 function Animation() 
@@ -28,14 +28,19 @@ function Animation()
   return (
     <>
       <div id="header" className="background p-4" >
-        <img style={{ width: headerBgSize, opacity: headerOpacity  }} className="w-100" src={bg} alt="" />
-        <AnimatedHeader style={{ opacity: headerOpacity }}><div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
+        <img style={{  opacity: headerOpacity  }} className="w-100" src={bg} alt="" />
+        <AnimatedHeader style={{ opacity: headerOpacity }}><div className="text-center text-light font-weight-bold">Your Text Header</div>
+        <button className="btn btn-dark btn-lg rounded-pill w-50 m-5 ">
+              Learn more
+            </button>
+        </AnimatedHeader>
+     
 
 
       </div>
 
       <div className="container p-5">
-        <h1 className="text-center">Head</h1>
+        <h1 className="text-center bg-blue">Head</h1>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio
         vel quidem minima, aliquid similique corrupti deleniti id laboriosam
