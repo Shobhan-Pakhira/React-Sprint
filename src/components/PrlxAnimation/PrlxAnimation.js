@@ -16,7 +16,7 @@ function Animation()
 
   useEffect(() => {
     const handleScroll = () => {
-      setHeaderOpacity(1 - window.pageYOffset / 300);
+      setHeaderOpacity(1 - window.pageYOffset / 800);
       setHeaderBgSize(`${160 - window.pageYOffset / 20}%`);
     };
     window.addEventListener("scroll", handleScroll);
@@ -28,14 +28,14 @@ function Animation()
   return (
     <>
       <div id="header" className="background p-4" >
-        <img style={{ width: headerBgSize }} className="" src={bg} alt="" />
+        <img style={{ width: headerBgSize, opacity: headerOpacity  }} className="w-100" src={bg} alt="" />
         <AnimatedHeader style={{ opacity: headerOpacity }}><div className="text-center text-light"> Your Text Header</div></AnimatedHeader>
 
 
       </div>
 
-      <div className="container">
-        <h2>Header</h2>
+      <div className="container p-5">
+        <h1 className="text-center">Head</h1>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio
         vel quidem minima, aliquid similique corrupti deleniti id laboriosam
@@ -80,3 +80,4 @@ function Animation()
 }
 
 export default Animation;
+
