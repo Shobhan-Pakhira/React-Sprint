@@ -8,7 +8,7 @@ import React from 'react';
 // import SupportFeature from './components/SupportFeature/SupportFeature';
 // import Footer from './components/Footer/Footer';
 // import HomePage from './components/HomePage/HomePage'
-// import Animation from './components/Animation/Animation';
+import Animation from './components/Animation/Animation';
 // import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
 // import VideoAnimated from './components/VideoAnimated/VideoAnimated';
 // import VideoAnimation from './components/VideoAnimaton/VideoAnimation';
@@ -28,15 +28,15 @@ function App() {
     <Footer />
     <HomePage /> 
     <Footer />
-    <Animation />  
     <VideoAnimation /> 
     <VideoAnimated />  
     <VideoAnimation /> 
     <SupportFeature />
-     <VideoAnimation /> 
+    <VideoAnimation /> 
     <Animation />
-     */}
+  */}
    
+    <Animation />  
    <PrlxAnimation /> 
    
     
