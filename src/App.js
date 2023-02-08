@@ -34,7 +34,7 @@ function App() {
     <Animation />
   */}
   <PrlxAnimation />
-   <VideoAnimation />
+   {/* <VideoAnimation /> */}
     
    
     

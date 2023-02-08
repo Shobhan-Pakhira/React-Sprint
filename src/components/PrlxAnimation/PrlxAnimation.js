@@ -4,7 +4,6 @@ import bg from "../../assets/pelxAnimation/bg.webp";
 import { animated } from 'react-spring'
 // import "./Animation.css";
 
-
 const AnimatedHeader = animated(({ style, children }) => {
   return <h1 style={{ ...style, position: 'absolute', top: '60%', left: '50%', transform: 'translate(-50%, -50%)' }}>{children}</h1>;
 });
@@ -34,11 +33,7 @@ function Animation()
               Learn more
             </button>
         </AnimatedHeader>
-     
-
-
       </div>
-
       <div className="container p-5">
         <h1 className="text-center bg-blue">Head</h1>
         <p>
